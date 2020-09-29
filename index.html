@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Sorting Visualizer</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js" integrity="sha512-WIklPM6qPCIp6d3fSSr90j+1unQHUOoWDS4sdTiR8gxUTnyZ8S2Mr8e10sKKJ/bhJgpAa/qG068RDkg6fIlNFA==" crossorigin="anonymous"></script>
+  <script src="QuickSort.js"></script>
+  <script src="MergeSort.js"></script>
+  <script src="BubbleSort.js"></script>
+  <script src="SelectionSort.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-light" style="background-color: #011f35;">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" style="color:#ff00bbc7" href="#">Sorting Visualizer</a>
+      </div>
+      <div class="navbar-brand" style=" margin-left: auto !important; color:#337ab7">
+        Sorting Algorithm
+      </div>
+      <div class="navbar-brand" >
+        <select id="algo" style ="margin-left: auto !important; background-color: #83c8ea; border:black;">
+          <option value="ms">Merge Sort</option>
+          <option value="qs">Quick Sort</option>
+          <option value="bs">Bubble Sort</option>
+          <option value="ss">Selection Sort</option>
+        </select>
+      </div>
+      <div class="navbar-brand" style="margin-left: auto !important; color:#337ab7">
+        Speed
+      </div>
+      <div class="navbar-brand ">
+        <form class="form-inline">
+          <input style="padding:5px; margin-left: auto !important" id="size" type="range" min="5" max = "65" step="20"/>
+        </form>
+      </div>
+      <div class="navbar-brand ">
+        <button id="run" style="padding:3px;margin-left: auto !important; background-color:#0ef3f2" class="btn btn-outline-success my-2 my-sm-0" onclick="run()">Run Algorithm</button>
+      </div>
+      <div class="navbar-brand .ml-auto">
+        <button id="reset" style="padding:3px ;margin-left: auto !important; background-color:#0ef3f2" class="btn btn-outline-success my-2 my-sm-0" onclick="reset()">Reset Values</button>
+      </div>
+    </div>
+  </nav>
+  <script src="main.js"></script>
+</body>
+</html>
